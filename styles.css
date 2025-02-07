@@ -1,0 +1,89 @@
+/* General styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f9e3e3, #ffcccb);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    flex-direction: column;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.2em;
+    color: #d32f2f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Yes button styles */
+.yes-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.yes-button:hover {
+    background-color: #388e3c;
+    transform: scale(1.1);
+}
+
+/* No button styles */
+.no-button {
+    background-color: #f44336;
+    color: white;
+    position: relative;
+}
+
+.no-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* GIF Styling */
+.gif_container img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .gif_container img {
+        max-width: 200px;
+    }
+}
